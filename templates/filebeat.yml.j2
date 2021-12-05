@@ -1,6 +1,7 @@
+---
 filebeat.inputs:
 - type: log
   paths:
-    - /path/to/file/logstash-tutorial.log 
-output.logstash:
-  hosts: ["localhost:5044"]
+    - /var/log/messages
+output.elasticsearch:
+  hosts: ["localhost:9200"]

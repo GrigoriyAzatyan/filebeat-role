@@ -7,7 +7,7 @@ Requirements
 ------------
 
 Работает на CentOS. Устанавливает Filebeat.
-
+   
 
 
 Example Playbook
