@@ -15,7 +15,7 @@
   template:
     src: filebeat.yml.j2
     dest: /etc/filebeat/filebeat.yml
-  notify: start Filebeat
+  notify: restart Filebeat
   when: ansible_virtualization_type != 'docker' 
 
 - name: Configure filebeat in Docker
