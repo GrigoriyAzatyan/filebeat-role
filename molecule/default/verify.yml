@@ -1,0 +1,15 @@
+---
+- name: Verify Filebeat
+  hosts: all
+  gather_facts: true
+  tasks:
+
+  - name: Find Filebeat's log file
+    stat:
+      path: /var/log/filebeat/filebeat
+    register: filebeat_log
+
+  - name: Verify that Kibana's log exists
+    assert:
+      that: filebeat_log.stat.exists == True
+      msg: log result is {{ filebeat_log.stat.exists }}

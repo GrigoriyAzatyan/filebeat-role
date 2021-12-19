@@ -6,8 +6,9 @@ filebeat-role
 Requirements
 ------------
 
-Работает на CentOS. Устанавливает Filebeat.
-   
+Поддерживает дистрибутивы  на базе RHEL, Debian, а также контейнеры Docker. Устанавливает Filebeat.
+В папке molecule приведены скрипты для тестирования.
+
 
 
 Example Playbook
